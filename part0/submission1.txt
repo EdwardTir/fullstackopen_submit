@@ -10,10 +10,12 @@ browser starts executing js-code
 that requests JSON data from server 
 end note
 
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+server--browser: redirect request to reload page
+
 note over browser:
 browser executes the event handler
 that renders notes to display
 end note
 
-browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
-server--browser: redirect request to reload page
+
